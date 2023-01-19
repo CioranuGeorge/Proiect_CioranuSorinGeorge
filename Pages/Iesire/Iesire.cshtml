@@ -1,0 +1,16 @@
+﻿@page
+@model Proiect_CioranuSorinGeorge.Pages.Iesire.IesireModel
+@{
+}
+
+<h1>Comanda Dumneavoastra</h1>
+<div class="align-content-center">
+    <div class="col-3 mx-auto mb-5">
+        <img src="~/images/PozaBurger.jpg" class="w-100" asp-append-version="true" />
+        <p>Comanda Dumneavoastra pentru @Model.NumeBurger Burger este in curs de pregatire</p>
+        <br/>
+        <p>Pretul total pentru comanda este de: @Model.BurgerPret </p>
+
+        <a class="btn alert-primary mt-1 mx-auto" asp-area="" asp-page="Vamultumim">Confirm Order</a>
+    </div>
+</div>

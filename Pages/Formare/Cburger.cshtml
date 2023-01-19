@@ -1,0 +1,36 @@
+﻿@page
+@model Proiect_CioranuSorinGeorge.Pages.Formare.CburgerModel
+@{
+}
+
+<div class="text-center container">
+    <h1>Creaza propriul Burger</h1>
+    <form method="post" >
+        <input type="text" asp-for="Burger.NumeBurger"
+        placeholder="Numele Burgerului.."/>
+        <br/>
+        <input type="checkbox" asp-for="Burger.Rosii"
+               placeholder="Rosii" /> Rosii
+        <br/>
+        <input type="checkbox" asp-for="Burger.Ceapa"
+               placeholder="Ceapa" /> Ceapa
+        <br/>
+        <input type="checkbox" asp-for="Burger.Cascaval"
+               placeholder="Cascaval" /> Cascaval
+        <br/>
+        <input type="checkbox" asp-for="Burger.Carnevita"
+               placeholder="Carnevita" /> Carnevi
+        <br/>
+        <input type="checkbox" asp-for="Burger.Castraveti"
+               placeholder="Castraveti" /> Castraveti
+        <br/>
+        <input type="checkbox" asp-for="Burger.Masline"
+               placeholder="Masline" /> Masline
+        <br/>
+        <input type="checkbox" asp-for="Burger.Ardei"
+               placeholder="Ardei" /> Ardei
+        <br/>
+
+        <button class="btn btn-primary mt-1" type="submit">Comanda Burger</button>
+    </form>
+</div>

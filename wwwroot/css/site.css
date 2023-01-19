@@ -1,0 +1,52 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: deepskyblue;
+}
+
+.mainText {
+    padding: 30px 2px;
+    
+}
+
+.mainImage {
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.mainSubtitlu {
+    front-weight:400;
+    letter-spacing: 5px;
+}
+
+.Textmic {
+    text-align: right;
+    color: red;
+
+}
+
+.makeYourOwnDiv{
+    background: red;
+    margin: 0;
+
+}
+
+.makeYourOwnText{
+    margin: 100px 0 20px 0;
+    color: black;
+
+}

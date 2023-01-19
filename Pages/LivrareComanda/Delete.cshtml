@@ -1,0 +1,47 @@
+﻿@page
+@model Proiect_CioranuSorinGeorge.Pages.LivrareComanda.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Livrare</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Livrare.Nume)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Livrare.Nume)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Livrare.Adresa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Livrare.Adresa)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Livrare.NumarContact)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Livrare.NumarContact)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Livrare.NumarComanda)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Livrare.NumarComanda)
+        </dd>
+
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Livrare.ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,44 @@
+﻿@page
+@model Proiect_CioranuSorinGeorge.Pages.LivrareComanda.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Livrare</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Livrare.Nume)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Livrare.Nume)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Livrare.Adresa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Livrare.Adresa)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Livrare.NumarContact)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Livrare.NumarContact)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Livrare.NumarComanda)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Livrare.NumarComanda)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Livrare?.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

@@ -1,0 +1,44 @@
+﻿@page
+@model Proiect_CioranuSorinGeorge.Pages.ComenziModel
+@{
+}
+
+<h3>Comenzi</h3>
+
+<hr />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                NumeBurger
+            </th>
+            <th>
+                Pret
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach(var comenzi in Model.Comenzi){
+            <tr>
+                <td>
+                    @comenzi.ID
+                </td>
+                <td>
+                    @comenzi.NumeBurger
+                </td>
+                <td>
+                    @comenzi.Pret
+                </td>
+            </tr>
+        }
+
+        <tr>
+
+        </tr>
+    </tbody>
+</table>
